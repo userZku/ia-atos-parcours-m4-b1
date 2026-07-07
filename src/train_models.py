@@ -28,11 +28,11 @@ import pandas as pd
 from sklearn.metrics import mean_absolute_error, r2_score, root_mean_squared_error
 
 # TODO 1 — Imports des 3+ modèles
-# from sklearn.linear_model import Ridge
-# from sklearn.ensemble import RandomForestRegressor, HistGradientBoostingRegressor
+from sklearn.linear_model import Ridge
+from sklearn.ensemble import RandomForestRegressor, HistGradientBoostingRegressor
 
 # TODO 2 — Choix du splitter (justifie en notebook)
-# from sklearn.model_selection import KFold, TimeSeriesSplit
+from sklearn.model_selection import KFold, TimeSeriesSplit
 
 
 @dataclass

@@ -16,7 +16,17 @@ import pandas as pd
 
 # TODO — Sélectionne tes features (exclure les fuites !)
 FEATURES: list[str] = [
-    # ex. "season", "year", "month", "hour", ...
+    "year",
+    "month",
+    "hour",
+    "is_holiday",
+    "weekday",
+    "is_working_day",
+    "weather",
+    "temperature_norm",
+    "temperature_feels_norm",
+    "humidity_norm",
+    "windspeed_norm",
 ]
 TARGET: str = "total_rentals"
 
