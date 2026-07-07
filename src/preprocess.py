@@ -14,6 +14,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+LEAKAGE_COLUMNS: set[str] = {"casual_riders", "registered_riders"}
+
 # TODO — Sélectionne tes features (exclure les fuites !)
 FEATURES: list[str] = [
     "year",
@@ -40,6 +42,13 @@ def load_dataset(path: Path) -> tuple[pd.DataFrame, pd.Series]:
     Returns:
         (X, y) avec X = features sélectionnées, y = total_rentals.
     """
+    leakage_in_features = sorted(LEAKAGE_COLUMNS.intersection(FEATURES))
+    if leakage_in_features:
+        raise ValueError(
+            "Fuite de cible detectee: ces colonnes ne doivent jamais etre dans FEATURES "
+            f"car elles composent total_rentals: {leakage_in_features}"
+        )
+
     df = pd.read_csv(path)
     missing = [c for c in FEATURES + [TARGET] if c not in df.columns]
     if missing:

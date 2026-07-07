@@ -5,16 +5,12 @@
 
 ---
 
-## 🚀 Démarrage (4 commandes)
+## 🚀 Démarrage (3 commandes)
 
 ```bash
-git clone git@github.com:<ton-user>/M4-B1-mistral-<prenom>.git
-cd M4-B1-mistral-<prenom>
-
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
-jupyter notebook notebooks/M4-B1_template.ipynb
+git clone git@github.com:<ton-user>/M4-B1-mistral-<prenom>.git && cd M4-B1-mistral-<prenom>
+python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+jupyter notebook notebooks/M4-B1_theo_benchmark.ipynb
 ```
 
 > 📦 `bike_sharing.csv` est **déjà dans `data/`** (livré avec le template).
