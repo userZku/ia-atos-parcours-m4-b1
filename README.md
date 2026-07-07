@@ -3,6 +3,18 @@
 > **Repo template GitHub.** Clique sur **« Use this template »** → nomme-le
 > `M4-B1-mistral-<prénom>`.
 
+## 📦 Livrables
+
+- **L1 — Notebook benchmark** : `notebooks/M4-B1_theo_benchmark.ipynb`
+- **L2 — Tableau comparatif** : `benchmark_table.md`
+- **L3 — Modèles persistés** : `models/*.joblib` + `models/benchmark_metadata.json`
+- **L4 — Verdict (5 lignes max)** : `verdict.md`
+- **L5 — Grille de décision perso** : `decision_card.md`
+- **L6 — Code reproductible** : `src/preprocess.py`, `src/train_models.py`, `src/evaluate.py`
+- **L7 — README de reproduction** : `README.md`
+- **L8 — Historique Git (commits explicites)** : dépôt GitHub du projet
+- **L9 — Journal de bord (amorce)** : `notebooks/journal-de-bord.ipynb`
+
 ---
 
 ## 🚀 Démarrage (3 commandes)
